@@ -27,34 +27,44 @@ a {
     color: white;
     font-size: 3rem;
     text-align: center;
-    margin-top: 100px;
+    margin-top: 50px;
 }
 
-header {}
-
-header > .logo {
+header.side {
     float: left;
-    width: 250px;
-    height: 100px;
+    width: 300px;
+    height: 850px;
+}
+
+header.side > .logo {
+    width: 300px;
+    height: 150px;
     background-color: #999;
 }
 
-header > .menu {
+header.side > .menu {
     float: left;
-    width: 950px;
-    height: 100px;
+    width: 300px;
+    height: 700px;
     background-color: #888;
 }
 
+.content {
+    float: left;
+    width: 900px;
+    height: 850px;
+}
+
 .slide {
-    height: 300px;
+    height: 900px;
+    height: 450px;
     background-color: #777;
 }
 
 .contents > div {
     float: left;
-    width: 400px;
-    height: 200px;
+    width: 33.3333%;
+    height: 300px;
 }
 
 .contents > .notice {
@@ -80,14 +90,14 @@ footer > .foot-logo {
 
 footer > .copyright {
     float: left;
-    width: 800px;
-    height: 100px;
+    width: 700px;
+    height: 50px;
     background-color: #888;
 }
 
 footer > .sns {
     float: left;
-    width: 200px;
-    height: 100px;
+    width: 700px;
+    height: 50px;
     background-color: #999;
 }
