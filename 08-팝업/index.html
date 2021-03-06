@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+    <meta charset="UTF-8">
+    <title>레이아웃01</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+    <section class="main-page">
+        <header class="row">
+            <div class="logo">logo</div>
+            <nav class="menu">menu</nav>
+        </header>
+        <div class="slide">
+            img-slide </div>
+        <div class="contents row">
+            <div class="notice">notice</div>
+            <div class="banner">banner</div>
+            <div class="pop-up">
+                <h3 class="layerPopup">pop-up</h3>
+            </div>
+        </div>
+        <footer class="row">
+            <div class="foot-logo">foot-logo</div>
+            <div class="copyright">Copyright</div>
+            <div class="sns">sns</div>
+        </footer>
+    </section>
+    <!----- 레이어 팝업 ------>
+    <div class="layer-bg"></div>
+    <div class="layer">
+        <h2>타이틀</h2>
+        <a href="#" class="close">닫기</a>
+    </div>
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+    <script>
+        $(".layerPopup").click(function() {
+            //$(".layer").css("display","block");
+            $(".layer").show();
+            $(".layer-bg ").show();
+        });
+        $(".layer .close").click(function() {
+            //$(".layer").css("display","none");
+            $(".layer").hide();
+            $(".layer-bg ").hide();
+        });
+
+    </script>
+</body>
+
+</html>
