@@ -1,9 +1,12 @@
 <!DOCTYPE html>
 <html lang="ko">
+
 <head>
     <meta charset="UTF-8">
     <title>세로메뉴01</title>
     <link rel="stylesheet" href="css/style.css">
+    <script src="script/jquery-1.12.3.js"></script>
+    <script src="script/common01.js"></script>
 </head>
 
 <body>
@@ -66,14 +69,7 @@
             </footer>
         </div>
     </section>
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
-    <script>
-        $(".menu > ul > li").hover(
-            function() {
-                $(this).find(".submenu").stop().slideDown();
-            },
-            function() {
-                $(this).find(".submenu").stop().slideUp();
-            });
-    </script>
-</body></html>
+
+</body>
+
+</html>

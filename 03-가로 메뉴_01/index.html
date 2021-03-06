@@ -5,6 +5,8 @@
     <meta charset="UTF-8">
     <title>가로메뉴</title>
     <link rel="stylesheet" href="css/style.css">
+    <script src="script/jquery-1.12.3.js"></script>
+    <script src="script/common01.js"></script>
 </head>
 
 <body>
@@ -65,13 +67,6 @@
             <div class="sns">sns</div>
         </footer>
     </section>
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
-    <script>
-        $(".menu > ul > li").mouseover(function() {
-            $(this).find(".submenu").stop().slideDown(200);
-        });
-        $(".menu > ul > li").mouseout(function() {
-            $(this).find(".submenu").stop().slideUp(200);
-        });
-    </script>
-</body></html>
+</body>
+
+</html>
