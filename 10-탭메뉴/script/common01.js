@@ -5,7 +5,7 @@ $(document).ready(function () {
     tabCon.hide().eq(0).show(); //eq(인덱스 검색)
 
     tabBtn.click(function (e) {
-        e.preventDefault();  //고유 동작을 중단
+        e.preventDefault(); //고유 동작을 중단
         var target = $(this);
         var index = target.index();
         alert(index);
@@ -13,6 +13,6 @@ $(document).ready(function () {
         target.addClass("actived_tab")
         tabCon.css("display", "none");
         tabCon.eq(index).css("display", "block");
-        tabBtn.eq(index).css("font-weight", "bold");
+        //        tabBtn.eq(index).css("font-weight", "bold");
     })
 });

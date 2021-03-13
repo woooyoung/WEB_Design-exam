@@ -19,10 +19,6 @@ a {
     clear: both;
 }
 
-.actived_tab {
-    text-decoration: underline;
-}
-
 /*cus*/
 .main-page {
     margin-left: auto;
@@ -34,7 +30,9 @@ a {
     margin-top: 100px;
 }
 
-header {}
+header {
+    background-color: #888;
+}
 
 header > .logo {
     float: left;
@@ -43,11 +41,54 @@ header > .logo {
     background-color: #999;
 }
 
+/*menu*/
 header > .menu {
+    position: relative;
+    float: right;
+    width: 600px;
+    margin-top: 28px;
+    background-color: black;
+}
+
+header > .menu li {
+    position: relative;
     float: left;
-    width: 950px;
-    height: 100px;
-    background-color: #888;
+    width: 25%;
+    text-align: center;
+}
+
+header > .menu li a {
+    padding: 10px;
+    display: block;
+    font-size: 20px;
+}
+
+header > .menu li:hover > a {
+    background-color: white;
+    color: rgba(0, 0, 0, 0.4);
+}
+
+header > .menu li ul.submenu {
+    display: none;
+    position: absolute;
+    left: 0;
+    top: 40px;
+    background-color: black;
+    z-index: 1;
+}
+
+header > .menu li ul.submenu li {
+    width: 100%;
+    border-right: 0;
+}
+.menu-bg{
+    display: none;
+    background-color: pink;
+    width: 1200px;
+    height: 180px;
+    left: -600px;
+    top: 44px;
+    position: absolute;
 }
 
 .slide {
@@ -65,34 +106,6 @@ header > .menu {
     background-color: #666;
 }
 
-.contents .tab-menu {
-    padding: 10px;
-    font-size: 22px;
-}
-
-.contents .tab-btn ul {
-    overflow: hidden;
-}
-
-.contents .tab-btn li {
-    float: left;
-    width: 160px;
-    background-color: #afafaf;
-    text-align: center;
-}
-
-.contents .tab-btn li a {
-    padding: 10px;
-    display: block;
-    color: white;
-}
-
-.contents .tab-con {
-    padding: 20px;
-    background-color: grey;
-    text-align: left;
-}
-
 .contents > .banner {
     background-color: #555;
 }
@@ -104,7 +117,6 @@ header > .menu {
 footer {}
 
 footer > .foot-logo {
-    font-size: 2.5rem;
     float: left;
     width: 200px;
     height: 100px;

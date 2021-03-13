@@ -65,7 +65,6 @@ header > .menu ul li {
 }
 
 header > .menu ul li a {
-    display: block;
     padding: 10px;
     display: block;
     font-size: 20px;
@@ -93,7 +92,7 @@ header > .menu ul li:first-child ul.submenu::after {
     left: -480px;
     top: 0;
     width: 480px;
-    height: 176px;
+    height: 187px;
     background-color: black;
 }
 
