@@ -82,6 +82,9 @@ header > .menu {
     background-color: #afafaf;
     text-align: center;
 }
+.contents .tab-btn li:nth-child(2){
+    background-color: grey;
+}
 
 .contents .tab-btn li a {
     padding: 10px;
@@ -89,8 +92,11 @@ header > .menu {
     color: white;
 }
 
+.contents .tab-con > div:first-child{
+    background-color: #afafaf;
+}
+
 .contents .tab-con {
-    padding: 20px;
     background-color: grey;
     text-align: left;
 }
