@@ -1,9 +1,10 @@
   $(document).ready(function () {
 
-      var num = 0;
-      var result;
+
 
       function fun() {
+          var num = 0;
+          var result;
           setInterval(function () {
               result = num * -300; //1200
               num++;
@@ -12,7 +13,7 @@
                   num = 0;
               }
               $(".slider").stop().animate({
-                  top: result + 'px'    //left
+                  top: result + 'px' //left
               });
           }, 3000);
       }
